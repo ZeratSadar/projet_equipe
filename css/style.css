@@ -1,0 +1,184 @@
+@font-face { 
+	font-family: gravity;
+    src: url('font/gravity/gravity.eot');
+    src: url('font/gravity/gravity.eot?#iefix') format('embedded-opentype'),
+         url('font/gravity/gravity.woff') format('woff'),
+         url('font/gravity/gravity.ttf') format('truetype'),
+         url('font/gravity/gravity.svg#LearningCurveProRegular') format('svg');
+}
+html, body {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+	background: #fff;
+	color: #fff;
+}
+/*Le header pour le menu à gauche*/
+header {
+	width:100%;
+	height: 24%;
+	position: fixed;
+	left:0px;
+	top:0px;
+	z-index: 20;
+}
+#banner{
+
+	height:100%;
+	margin-right:auto;
+	margin-left:auto;
+	z-index:21;
+	background-color: #330033;
+	display: block;
+}
+#banner img{
+	height:100%;
+	position:relative;
+	margin:auto;
+	display: block;
+}
+#menu{
+	background-color: #FFF;
+	height:20px;
+	width:100%;
+	position:absolute;
+	bottom:-20px;
+	z-index:30;
+}
+#brouj{
+	background-color: #330033;
+	height:15px;
+	width:100%;
+	position: fixed;
+	margin-top: 27px;
+	z-index: 10;
+}
+#flit{
+	height:2px;
+	width:100%;
+	background-color: white;
+	margin-top: 42px;
+	position: fixed;
+	z-index: 10;
+}
+ol,ul {
+	list-style:none;
+}
+a{
+	text-decoration: none;
+	text-align:center;
+	margin-left:27%;
+}
+ul {
+	position:relative;
+	width:90%;
+	margin: auto;
+}
+#menu li {
+float:left;
+background-color:#fff;
+width:33%;
+}
+#menu li a {
+display:block;
+width:100px;
+height:100%;
+color:#000;
+text-decoration:none;
+padding:7px;
+font-size:11px;
+font-family: 'Electrolize', Arial, Helvetica;
+}
+#menu li :hover {
+color:#FFD700;
+z-index:30;
+background-color: black;
+
+}
+#menu ul li ul {
+display:none;
+z-index:30;
+}
+#menu ul li:hover ul {
+display:block;
+z-index:30;
+background-color: white;
+}
+#menu li:hover ul li {
+float:none;
+margin-left:7%;
+z-index:30;
+background-color: white;
+}
+/*bred c'est une div pour faire une seconde barre rouge sous le menu (cf maquette)*/
+
+/*gbtop et bot : div faire une ligne grise au dessus et au dessous du texte;*/
+.gb {
+	margin:auto;
+	background-color: #993333;
+	width:80%;
+	height: 10px;
+	position: relative;
+	margin-top: 50px;
+}
+/*paragraphe avec nos biographie*/
+p {
+	margin:auto;
+	color: #333333;
+	width:80%;
+	margin-top: 20px;
+	font-family: gravity, Arial, Helvetica;
+}
+#bloc_membre{
+	width:85%;
+	margin:auto;
+	left:5%;
+	position:relative;
+}
+
+.membre{
+	position:relative;
+	display:block;
+	font-size: 1em;
+	margin-top: 25px;
+	width: 100%;
+}
+#image{
+	width: 100px;
+	position: relative;
+	cursor:  pointer;
+}
+#image :hover{
+	width: 150px;
+	position: relative;
+}
+.ico_categorie{
+	width: 100%;
+}
+#txt{
+	width: 70%;
+	position: relative;
+}
+.bloc { 
+	display:inline-block;
+	vertical-align:middle;
+	text-align:justify;
+}
+.content{
+	top: 200px;
+	position: absolute;
+	padding-bottom: 30px;
+	width:100%;
+	z-index: 0;
+}
+.content h2{
+	font-size: 25px;
+	margin-top: 25px;
+	margin-left:10%;
+	color: #333333;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	font-family: 'Electrolize', Arial, Helvetica;
+}
